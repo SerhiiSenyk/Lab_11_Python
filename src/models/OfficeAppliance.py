@@ -5,12 +5,14 @@
 from abc import ABC
 
 class OfficeAppliance(ABC):
-    def __init__(self,price = 0,color = None,weight = 0,producer = "",material = None):
+
+    def __init__(self, price = 0, color = None, weight = 0, producer = None, material = None):
         self.price = price
         self.color = color
         self.weight = weight
         self.producer = producer
         self.material = material
+
     def __str__(self):
         return "\tPrice :\t" + str(self.price) + "\n" +\
             "\tColor {" + str(self.color) + "\n\t}\n" +\
